@@ -1,0 +1,63 @@
+package main
+import (
+	"database/sql"
+	"fmt"
+	"log"
+	"time"
+	_ "github.com/lib/pq"
+)
+
+const (
+	host     = "localhost"
+	port     = 5432
+	user     = "postgres"
+	password = "yourpassword"
+	dbname   = "yourdb"
+)
+
+type Riwayat struct {
+	ID        int
+	UserID    int
+	PPB       int
+	Stadium   int
+	CreatedAt time.Time
+	UpdatedAt time.Time
+	DeletedAt time.Time
+}
+
+type DataUser struct {
+	ID             int
+	NamaLengkap    string
+	NamaPanggilan  string
+	JenisKelamin   bool
+	Usia           int
+	Password       string
+}
+func main(){
+	if ppb <= 636{
+		stadium = 0
+	}
+	if ppb >= 636 && <= 1020{
+		stadium = 1
+	}
+	if ppb >= 1020 && <= 1943{
+		stadium = 2
+	}
+	if ppb >= 1943 && <= 4421{
+		stadium = 3
+	}
+	if ppb >= 4421 && <= 4421{
+		stadium = 4
+	}
+	if ppb >= 12781{
+		stadium = 5
+	}
+}
+
+func saveRiwayat(){
+
+}
+
+func saveDataUser(){
+
+}
